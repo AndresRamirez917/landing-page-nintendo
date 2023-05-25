@@ -55,6 +55,11 @@ li {
     display: none;
 }
 
+li a.active, li a:hover{
+    background-color: #811818b0;
+    border-radius: 4px;
+    width: max-content;
+}
 
 .navLogo {
     background-color: rgb(243, 61, 61);
