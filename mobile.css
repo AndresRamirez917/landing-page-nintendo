@@ -1,0 +1,246 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container {
+    max-width: 1300px;
+}
+
+ul li a {
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.navLogo,
+.navLista,
+ .listilla, 
+.portada,
+.redRibbon,
+.redSquare,
+.yellowRibbon,
+.fruitRibbon,
+.games,
+.listaGames,
+.content,
+.greenRibbon,
+.greenBk,
+.woodBk,
+.amiibos,
+.yellowBtn0,
+.play,
+.play__title,
+.play__items,
+.pareja-1,
+.pareja-2,
+.pareja-3,
+.pareja-4, 
+.footer{
+    grid-column: 1;
+}
+
+.navLogo {
+    text-align: center;
+    grid-row: 1/2;
+}
+
+.navLista{
+  grid-row: 2/3;
+}
+
+.listilla{
+    width: 100vh;
+justify-content: center;
+}
+
+.portada {
+    grid-row: 3/10;
+}
+
+.redRibbon {
+    grid-row: 10;
+}
+
+.redSquare {
+    display: flex;
+    flex-direction: column;
+    grid-row: 11/12;
+    justify-content: center;
+    justify-self: center;
+
+}
+
+.redSquare h2 {
+    font-size: 20px;
+}
+
+.yellowRibbon {
+    grid-row: 11/13;
+}
+
+.fruitRibbon {
+    margin-top: -90px;
+    grid-row: 13/14;
+}
+
+.games {
+    grid-row: 15/16;
+    margin-top: -160px;
+}
+
+.listaGames {
+    flex-direction: column;
+    color: red;
+}
+
+.content {
+    flex-direction: column;
+    grid-row: 17;
+}
+
+.greenRibbon {
+    grid-row: 16;
+}
+
+.greenBk {
+    grid-row: 17/24;
+}
+
+.woodBk {
+
+    grid-row: 24/28;
+
+}
+
+.yellowBtn0 {
+   
+    margin: 0 auto;
+}
+
+.amiibos {
+    flex-direction: column;
+    grid-row: 29;
+    margin: 200px auto;
+margin-top: -10px;
+}
+
+.amiibos__title{
+    margin-top: -120px;
+    z-index: 100;
+    position: relative;
+}
+
+
+
+.play{   
+    grid-row: 28;
+    
+}
+
+.play__items {
+    display: flex;
+  
+flex-direction: column;
+align-items: center;
+    grid-row: 31;
+    gap: 10px;
+   
+}  
+
+.footer{
+    grid-row: 29;
+
+}
+
+.isabelle {
+    display: none;
+}
+
+
+
+
+
+
+
+/* navbar */
+
+.nav__hamburguer,
+.nav__close{
+    display: grid;
+}
+
+.nav{
+    --state-close: scale(0);
+    --state-hamburguer:scale(1);
+    --state-menu: translate(-100%);
+
+    padding: 10px 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+}
+
+.nav:target{
+    --state-menu: translate(0);
+    --state-close: scale(1);
+    --state-hamburguer:scale(0);
+}
+
+.nav__hamburguer, 
+.nav__close{
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: .4s transform;
+}
+
+.nav__hamburguer{
+    transform: var(--state-hamburguer);
+}
+
+.nav__close{
+    transform: var(--state-close);
+}
+
+.nav__icon{
+    width: 40px;
+}
+
+
+.nav__links{
+    background-color: #00000070;
+    position: absolute;
+    top: 0;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    padding: 0;
+
+    display: grid;
+    align-content: center;
+    gap: 2em;
+    padding-left: 5%;
+
+    transform: var(--state-menu);
+    transition: .3s transform;
+}
+
+.nav__item{
+    list-style: none;
+}
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.contain{
+    margin-top: -80px;
+}
